@@ -1,0 +1,5 @@
+{
+  "name": "Neo Images Generator",
+  "description": "An image-to-image generator using the Gemini Nano Banana model. Upload an image, provide a text prompt, and generate a new, edited image.",
+  "requestFramePermissions": []
+}

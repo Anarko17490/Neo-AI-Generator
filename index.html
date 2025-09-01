@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neo Images Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'neo-bg': '#121212',
+              'neo-surface': '#1e1e1e',
+              'neo-primary': '#00f2ea',
+              'neo-secondary': '#ff00ff',
+              'neo-text': '#e0e0e0',
+              'neo-text-secondary': '#a0a0a0',
+              'neo-border': '#333333',
+              'neo-accent-start': '#8a2be2',
+              'neo-accent-end': '#4169e1',
+            },
+            boxShadow: {
+              'neo': '0 0 15px rgba(0, 242, 234, 0.3), 0 0 5px rgba(255, 0, 255, 0.2)',
+              'neo-inset': 'inset 0 0 10px rgba(0, 242, 234, 0.2)',
+            },
+            animation: {
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'shimmer': 'shimmer 2s infinite linear',
+            },
+            keyframes: {
+              shimmer: {
+                '0%': { background-position: '-1000px 0' },
+                '100%': { background-position: '1000px 0' },
+              },
+            }
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.16.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-neo-bg text-neo-text">
+    <div id="root"></div>
+  </body>
+</html>
